@@ -1,7 +1,7 @@
-import axios from 'axios';
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Question from './components/Question';
+import Question from './Question';
+import axios from 'axios';
 
 function Quiz({ questions, onGrade }) {
   const [userAnswers, setUserAnswers] = useState(Array(questions.length).fill(null));
